@@ -1,3 +1,4 @@
+import React from "react";
 import {
 	FormLabel,
 	PageContainer,
@@ -6,9 +7,10 @@ import {
 	Title,
 	Form,
 	ButtonText,
+	SubmitButton,
 } from "./styles";
 import { MaterialIcons } from "@expo/vector-icons";
-import { StatusBar, Pressable } from "react-native";
+import { StatusBar } from "react-native";
 
 import Slider from "@react-native-community/slider";
 
@@ -34,13 +36,13 @@ export default function Home() {
 					maximumTrackTintColor="#000000"
 				/>
 			</Form>
-			<Pressable>
+			<SubmitButton>
 				<ButtonText> Gerar roteiro</ButtonText>
 				<MaterialIcons
 					name="travel-explore"
 					size={24}
-					color="#fff"></MaterialIcons>
-			</Pressable>
+					color="#FFF"></MaterialIcons>
+			</SubmitButton>
 		</PageContainer>
 	);
 }

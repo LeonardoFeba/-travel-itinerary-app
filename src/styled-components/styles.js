@@ -1,16 +1,11 @@
 import styled from "styled-components/native";
 
-import { Platform, StatusBar } from "react-native";
-
 export const PageContainer = styled.View`
 	display: flex;
 	flex: 1;
 	background-color: #f1f1f1;
 	align-items: center;
-	padding-top: 20px;
-	padding-top: ${Platform.OS === "android"
-		? `${StatusBar.currentHeight}px`
-		: "54px"};
+	padding-top: 54px;
 `;
 export const Title = styled.Text`
 	font-size: 32px;
@@ -44,19 +39,17 @@ export const StayingDays = styled.Text`
 	background-color: #f1f1f1;
 `;
 
-// export const SubmitButton = styled.Pressable`
-// 	background-color: #ff5656;
-// 	width: 95%;
-// 	border-radius: 8%;
-// 	flex-direction: row;
-// 	padding: 14px;
-// 	justify-content: center;
-// 	align-items: center;
-// 	gap: 8px;
-// `;
+export const SubmitButton = styled.TouchableOpacity`
+	display: flex;
+	width: 95%;
+	padding: 14px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+`;
 
 export const ButtonText = styled.Text`
 	font-size: 18px;
-	color: white;
+	color: red;
 	font-weight: bold;
 `;

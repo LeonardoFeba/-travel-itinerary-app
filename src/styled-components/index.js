@@ -8,22 +8,17 @@ import {
   Form,
   ButtonText,
   SubmitButton,
-  ContentView,
   ContainerScroll,
   ContentTitle,
+  ItineraryText,
+  ContentScroll,
 } from "./styles";
 import { MaterialIcons } from "@expo/vector-icons";
-import { Modal, StatusBar, ScrollView, View, Text } from "react-native";
+import { StatusBar } from "react-native";
 
 import Slider from "@react-native-community/slider";
 
 export default function Home() {
-  // const [modalVisbile, setModalVisibile] = useState(false)
-
-  // function onModal() {
-  // 	return setModalVisibile(true)
-  // }
-
   return (
     <PageContainer>
       <StatusBar
@@ -54,15 +49,15 @@ export default function Home() {
         ></MaterialIcons>
       </SubmitButton>
 
-      <ContentView>
-        <ContainerScroll>
-          <ContentTitle>Roteiro da sua viagem</ContentTitle>
-        </ContainerScroll>
-      </ContentView>
-
-      {/* <Modal visible={modalVisbile}>
-				<Text>OIIII</Text>
-			</Modal> */}
+      <ContainerScroll
+        contentContainerStyle={{ paddingBottom: 24, marginTop: 4 }}
+        showsVerticalScrollIndicator={false}
+      >
+        <ContentScroll>
+          <ContentTitle>Roteiro de viagem 👇</ContentTitle>
+          <ItineraryText>texto do roteiro</ItineraryText>
+        </ContentScroll>
+      </ContainerScroll>
     </PageContainer>
   );
 }

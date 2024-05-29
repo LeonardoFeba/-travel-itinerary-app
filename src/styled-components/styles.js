@@ -58,16 +58,17 @@ export const ButtonText = styled.Text`
 `;
 
 export const ContainerScroll = styled.ScrollView`
-  background-color: #fff;
   padding: 16px;
   width: 95%;
-  margin-top: 16px;
-  border-radius: 8px;
+  margin-top: 8px;
 `;
 
 export const ContentScroll = styled.View`
   width: 100%;
-  margin-top: 8px;
+  margin-top: 16px;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
 `;
 
 export const ContentTitle = styled.Text`

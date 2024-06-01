@@ -21,7 +21,7 @@ const KEY_GPT = "";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
-  const [travel, setTravel] = useState("Bla bla bla roteiro");
+  const [travel, setTravel] = useState("");
   const [city, setCity] = useState("");
   const [days, setDays] = useState(3);
 
@@ -31,6 +31,8 @@ export default function Home() {
       return;
     }
 
+    //Mensagem "chumbada" no campo do roteiro de viagem apenas para mostrá-lo.
+    setTravel("Aqui apareceria a resposta do chatGPT (roteiro de viagem)");
     setLoading(true);
     Keyboard.dismiss();
 

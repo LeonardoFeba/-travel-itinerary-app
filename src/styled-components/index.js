@@ -14,7 +14,7 @@ import {
   ContentScroll,
 } from "./styles";
 import { MaterialIcons } from "@expo/vector-icons";
-import { Modal, StatusBar, ScrollView, View, Text } from "react-native";
+import { StatusBar } from "react-native";
 
 import Slider from "@react-native-community/slider";
 

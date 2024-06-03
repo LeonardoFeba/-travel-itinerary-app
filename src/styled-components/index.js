@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   FormLabel,
   PageContainer,
@@ -13,7 +13,7 @@ import {
   ContentTitle,
 } from "./styles";
 import { MaterialIcons } from "@expo/vector-icons";
-import { Modal, StatusBar, ScrollView, View, Text } from "react-native";
+import { StatusBar } from "react-native";
 
 import Slider from "@react-native-community/slider";
 

@@ -53,15 +53,21 @@ export const SubmitButton = styled.TouchableOpacity`
 
 export const ButtonText = styled.Text`
   font-size: 18px;
-  color: red;
+  color: #fff;
   font-weight: bold;
 `;
 
-export const ContentView = styled.View`
-  background-color: #fff;
+export const ContainerScroll = styled.ScrollView`
   padding: 16px;
+  width: 95%;
+  margin-top: 8px;
+`;
+
+export const ContentScroll = styled.View`
   width: 100%;
   margin-top: 16px;
+  background-color: #fff;
+  padding: 16px;
   border-radius: 8px;
 `;
 
@@ -72,7 +78,6 @@ export const ContentTitle = styled.Text`
   margin-bottom: 14px;
 `;
 
-export const ContainerScroll = styled.View`
-  width: 95%;
-  margin-top: 8px;
+export const ItineraryText = styled.Text`
+  text-align: center;
 `;

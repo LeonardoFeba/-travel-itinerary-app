@@ -15,6 +15,9 @@ import {
 } from "./styles";
 import { MaterialIcons } from "@expo/vector-icons";
 import { StatusBar } from "react-native";
+import { useState } from "react";
+import { ActivityIndicator } from "react-native";
+import { Keyboard } from "react-native";
 
 import Slider from "@react-native-community/slider";
 
